@@ -89,3 +89,48 @@ console.log('Boolean + number:', false + 1)//1
 console.log('Boolean + number:', true - 1)//0
 console.log('Boolean + number:', false - 1)//-1
 
+
+
+// Оператор '=' выполняет функцию присвоения  
+
+// NEXT LESSON
+
+/* Приоритет операций */
+
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+
+var result = 12 - 6 / 3 // 10
+var result2 = 3 + 4 * 2 // 11
+
+console.log('12 - 6 / 3:', result)
+console.log('3 + 4 * 2:', result2)
+
+
+
+
+var isGreater = 20 - 6 * 3 >= 4 // 20 - 6 * 3 = 2  
+var isGreater2 = 18 + 100 / 2 >= 25 // 18 + 100 / 2 = 68
+/* Приоритетность:
+var isGreater2 = 18 + 100 / 2 >= 25
+               3    13    14  11
+               3 - ОПЕРАТОР ПРИСВАИВАНИЯ
+               13 - ОПЕРАТОР СЛОЖЕНИЯ
+               14 - ОПЕРАТОР ДЕЛЕНИЯ
+               11 - ОПЕРАТОР СРАВНЕНИЯ
+*/
+console.log('20 - 6 * 3 >= 4',isGreater)  // false 2 < 4
+console.log('18 + 100 / 2 >= 25',isGreater2)  // true 68 > 25
+
+
+// Пример 
+var result3 = (22 + 48 + 100) / 2  // (22 + 48 + 100) = 170   170 / 2 = 85
+//          3 20  13   13  20 14
+
+console.log(('(22 + 48 + 100) / 2:'),result3) // 85
+
+
+//NEXT LESSON//
+
+//НОВЫЕ ОПЕРАТОРЫ//
+
