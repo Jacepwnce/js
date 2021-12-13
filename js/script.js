@@ -169,3 +169,37 @@ console.log(++i)
 // i++ постфиксная запись
 
 console.log(--i)
+
+
+
+
+// NEXT LESSON //
+
+// Операторы сравнения //
+
+console.log('5 > 3:', 5 > 3)//true
+console.log('25 > 30:', 25 > 30)//false
+
+// простые примеры
+
+console.log (('8 >= 7:'), 8 >= 7)//true
+console.log (('12 <= 12:'), 12 <= 12)//true
+//  console.log (('12 < 12:'), 12 < 12)// false
+console.log (('25 <= 14:'), 25 <= 14)//false
+
+
+// Оператор равенства '=='
+
+console.log(('4 == 4:'), 4 == 4)// true
+console.log(('4 == 5:'), 4 == 5)// false
+
+
+// Проверка на НЕРАВЕНСТВО '!='
+
+console.log(('4 != 4:'), 4 != 4)// false
+console.log(('4 != 5:'), 4 != 5)// true
+
+//'==='//
+
+console.log(('4 === 4:'), 4 === '4')// false тк. 4 - number,  а '4'- строка прошло сравнение ещё по типу данных 
+console.log(('4 == 4:'), 4 == '4')// true
