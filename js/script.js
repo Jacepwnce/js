@@ -47,3 +47,28 @@ function calculateAge (year) {
 
 checkAndLogAge(carYear, 'Машины', 8)
 checkAndLogAge(personYear, 'Человека', 30)
+
+
+
+// Спосбы вызова функций //
+
+// 1 вариант
+
+
+function sayHelloTo(name){
+    console.log('Привет, ' + name)
+}
+
+sayHelloTo('Антон')
+
+
+
+// 2 вариант  (Сама переменная становится функцией)
+
+
+
+var sayHelloTo = function (name) {
+    console.log('Hallo, ' + name)
+}
+
+sayHelloTo('Anton')
