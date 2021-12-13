@@ -62,3 +62,48 @@ console.log ('Значение true')
 
 
 console.log(typeof NaN)
+
+
+
+// Теранарные операторы
+
+
+var str = 'Hello'
+
+if (4) {
+    console.log('Значение true')
+} else {
+    console.log('Значение false')
+}
+
+
+4 ? console.log('Значение true') : console.log('Значение false') // теренарный оперетор
+// (?) - if                  // (:) - else
+
+
+
+
+
+// Пример //
+
+var personAge = 25
+
+
+if (personAge < 18) {
+    messege = 'Человек не совершеннолетний'
+} else {
+    messege = ('WELCOME TO THE CLUB BUDY!')
+}
+
+
+ var messege = personAge < 18 ? 'Человек не совершеннолетний' : 'WELCOME TO THE CLUB BUDY!' // терренарный оператор  
+
+console.log(messege)
+
+
+//другой формат записи теренарных операторов 
+
+/* var message = personAge < 18
+?  'Человек не совершеннолетний'
+:  'WELCOME TO THE CLUB BUDY!'
+*/
