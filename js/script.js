@@ -1,2 +1,5 @@
-console.log ('учим JS');
-['Учим, JS'].forEach(alert)
+// var-variable-переменная
+
+var messsage = 'Hello World !'
+
+console.log(messsage)
