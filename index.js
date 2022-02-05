@@ -11,6 +11,7 @@ function removeChar(strings) { // создаем фукцию в которую 
     return string; // Возвращаем результат преобразования в переменную
 };
 
+// Проверка
 console.log(removeChar('eloquent')); // loquen
 console.log(removeChar('country')); // ountr
 
@@ -38,7 +39,7 @@ function calculateSum(items) { // создается функция для ра�
 };
 
 //Проверка
-// console.log(calculateSum(coll1)); //48
- console.log(calculateSum(coll2)); // 27
+console.log(calculateSum(coll1)); //48
+// console.log(calculateSum(coll2)); // 27
 
 //Не знаю почему, но при вызове 2-ух не закоментированных ( console.log(calculateSum(coll1)) и console.log(calculateSum(coll2)) ), первый ответ он выдаёт правильный, а второй выдаёт, как 75. Если же их запускать по отдельности, то всё ок.
