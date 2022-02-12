@@ -1,13 +1,26 @@
-import {getNumberOfChars, getLower, getUpper} from "/js/helpers.js";
+import {getSumOfGrades, getAverageGrade} from "./stats.js"
 
-let answer1 = document.querySelector("#answer1");
-let answer2 = document.querySelector("#answer2");
-let answer3 = document.querySelector("#answer3");
+let gradesForm = document.querySelector("#grades-form")
+let yourGrade = document.querySelector("#your-grade")
 
-let name = document.querySelector("#your-name");
+let grades = [14, 9, 13, 15, 18]
 
-name.addEventListener("keyup", () => {
-  answer1.textContent = getNumberOfChars(name.value);
-  answer2.textContent = getLower(name.value);
-  answer3.textContent = getUpper(name.value);
-});
+function render(grades) {
+  console.log("Grades: " + grades.join(', '))
+  let tbody = document.querySelector("#stats-table tbody")
+  tbody.innerHTML = `<tr>
+  <td>${grades.length}</td>
+  <td>${getSumOfGrades(grades)}</td>
+  <td>${getAverageGrade(grades)}</td>
+  </tr>`
+}
+
+gradesForm.addEventListener("submit", event => {
+  event.preventDefault()
+  let newGrade = Number.parseInt(yourGrade.value, 10)
+  grades.push(newGrade)
+  yourGrade.value = ""
+  render(grades)
+})
+
+render(grades)
