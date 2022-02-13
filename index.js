@@ -588,13 +588,13 @@ console.log(reverseNames(names));
 //  export function getSumOfGrades(grades) {
 //     // your code
 //     let sum = 0;
-  
+
 //     grades.forEach(function (grade) {
 //       sum = sum + grade;
 //     })
 //     return sum;
 //   }
-  
+
 //   /**
 //    * @param {array} grades
 //    */
@@ -602,7 +602,7 @@ console.log(reverseNames(names));
 //     // your code
 //     let result = 0;
 //     let avarege = grades.length;
-  
+
 //     grades.forEach(function (grade){
 //       result = (result + grade) / avarege;
 //     })
@@ -611,3 +611,80 @@ console.log(reverseNames(names));
 /////////////////////////////////////////////////////////////////////////////////
 
 // Array.map()-
+// нахождение суммы элементов массива с условием
+
+// let grades = [12, 8, 13, 9, 15];
+
+// let sum = 0;
+
+// grades.forEach(function (grade) {
+//     if (grade >= 0) {
+//         sum = sum + grade;
+//     }
+//     return sum;
+// });
+
+// console.log(sum);
+
+
+//Каждый раз, когда вы сталкиваетесь с подобными сценариями, когда вам нужно преобразовать существующий массив в новый, вы должны использовать метод .map().
+
+// .map() позволяет применить преобразование к каждому элементу массива.
+
+// let grades = [10, 15, 13];
+
+// let doubledGrades = grades.map(function (grade){
+//     return grade * 2;
+// });
+
+// console.log(doubledGrades);
+// console.log(grades);
+
+
+// task 
+
+// function tripleGrades(grades) {
+//    let newGrade = grades.map(function(grade){
+//        return grade * 3;
+//    });
+//    return newGrade;
+// };
+
+// // Sample usage - do not modify
+// console.log(tripleGrades([10, 20])) // [30, 60]
+// console.log(tripleGrades([5, 12, 20, 10])) // [15, 36, 60, 30]
+
+// Array.reduce() - цель данного метода в уменьшении массива до одного значения.
+
+// .reduce() - универсальная функция, которая сводит массив к одному значению. То, как он будет сводить этот массив к одному значению, настраивается разработчиком.
+
+// let grades = [10, 15, 5];
+
+// let sum = grades.reduce(function (total, current) {
+//     return total + current;
+// }, 0);
+
+// console.log(sum);
+// let grades = [10, 5, 15, 20]
+
+// let sum = grades.reduce(function(total, current) {
+//   console.log(`Total is ${total}`)
+//   console.log(`Current is ${current}`)
+//   console.log("---")
+//   return total + current
+// }, 0);
+
+// console.log(`Sum is ${sum}`)
+
+// task
+
+// function sumNumbers(numbers) {
+// 	let sum = numbers.reduce(function (total, current){
+//         return total + current;
+//     }, 0);
+//     return sum;
+// }
+
+// // Sample usage - do not modify
+// console.log(sumNumbers([10, 20, 30])) // 60
+// console.log(sumNumbers([2, 4, 2, 10])) // 18
