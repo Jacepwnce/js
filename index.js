@@ -67,4 +67,216 @@
 // console.log(sum) //20
 
 
-    ЫЫЫЫЫ
+// лекция object
+
+let firstName = 'Anton';
+let lastName = 'Bekhtgold';
+let age = 25;
+let email = 'jacepwncere@yandex.ru';
+let isVerified = true;
+
+//Все пять переменных представляют одного и того же человека, но глядя на сами переменные сложно об этом сказать, ведь у каждого человека есть и имя, и фамилия, возраст и т.д. Объекты позволяют сгруппировать все эти переменные в одну сущность:
+
+let pesrson = {
+    firstName: 'Anton',
+    lastName: 'Bekhtgold',
+    age: 25,
+    email: 'jacepwncere@yandex.ru',
+    isVerified: true
+};
+
+//Объекты отличаются от массивов тем, что они имеют keys и values. В то время как массивы содержат только values (ранее мы определили массивы как список значений). Keys - firstName , values - 'Anton'
+
+// ЧТЕНИЕ КЛЮЧЕЙ
+
+// function getUserAge (user){
+//     return  `The user is ${user.age} years old`
+// }
+
+// let person = {
+//     firstName: 'Anton',
+//     lastName: 'Bekhtgold',
+//     age: 25
+// };
+
+// console.log(getUserAge(person));
+
+// ОБНОВЛЕНИЕ ЗНАЧЕНИЯ 
+
+// let person = {
+//     name: 'Sam',
+//     age: 25
+// };
+
+// person.age = 29;
+
+// console.log(person);
+
+
+
+//task
+
+// let course1 = {
+//     name: "Learn English",
+//     isCompleted: true
+//   };
+//   let course2 = {
+//     name: "Learn JavaScript",
+//     isCompleted: false
+//   };
+
+//   function getCourseName (course){
+//       return `${course.name}`
+//   }
+
+//   console.log(getCourseName(course1)); // "Learn English"
+//   console.log(getCourseName(course2)); // "Learn JavaScript"
+
+
+//   function upgradeUser(user) {
+//      user.hasPaid = !false;
+//      return user
+// }
+
+// // Sample usage - do not modify
+// upgradeUser({id: 1, hasPaid: false});
+// upgradeUser({id: 2, hasPaid: false});
+
+// console.log(upgradeUser({id: 1, hasPaid: false}))
+
+
+
+// function getFormattedFullName(user) {
+// 	return `${user.firstName} ${user.lastName}`
+
+// }
+
+// // Sample usage - do not modify
+// let user1 = {
+//   firstName: "Sam",
+//   lastName: "Doe",
+//   age: 20
+// };
+
+// let user2 = {
+//   firstName: "Charlie",
+//   lastName: "Fort",
+//   age: 31
+// };
+
+// console.log(getFormattedFullName(user1)); // "Sam DOE"
+// console.log(getFormattedFullName(user2)); // "Charlie FORT"
+
+
+
+// function getIntials(user) {
+// 	return `${user.firstName[0]}${user.lastName[0]}`
+// }
+
+// // Sample usage - do not modify
+// let user1 = {
+//   firstName: "Sam",
+//   lastName: "Doe",
+//   age: 20
+// };
+
+// let user2 = {
+//   firstName: "Charlie",
+//   lastName: "Fort",
+//   age: 31
+// };
+
+// console.log(getIntials(user1)); // "SD"
+// console.log(getIntials(user2)); // "CF"
+
+// ДОБАВЛЕНИЕ НОВОЙ ПАРЫ KEY/VALUE 
+
+// let user = {
+//     firstName: 'Anton',
+//     lastName: 'Bekhtgold'
+// }
+
+// user.age = 25;
+
+// console.log(user);
+
+
+// let config = {};
+
+// config.currency = 'EU';
+// config.theme = 'black';
+
+// console.log(config);
+
+//task
+
+// function getVotingMessage(user) {
+// 	if (user.age >= 18){
+//         return 'You can vote'
+//     } else {
+//         return 'You cannot vote';
+//     }
+// }
+
+// // Sample usage - do not modify
+// let user1 = {
+//   firstName: "Sam",
+//   lastName: "Doe",
+//   age: 15
+// };
+
+// let user2 = {
+//   firstName: "Charlie",
+//   lastName: "Fort",
+//   age: 31
+// };
+
+// console.log(getVotingMessage(user1)); // "You cannot vote"
+// console.log(getVotingMessage(user2)); // "You can vote"
+
+
+// function addNumberOfChapters(course, count) {
+  
+// }
+
+// // Sample usage - do not modify
+// let course1 = {
+//     name: "Learn English",
+//     isCompleted: true
+// };
+// let course2 = {
+//     name: "Learn JavaScript",
+//     isCompleted: false
+// };
+
+// console.log(addNumberOfChapters(course1, 80))
+
+
+// function getNumberOfTags(game) {
+// 	// your code
+//     return game.tags.length
+// }
+
+// // Sample usage - do not modify
+// let game = {
+//   name: "Risk",
+//   tags: ["Strategy", "War", "Family friendly"],
+//   releaseYear: 1957
+// };
+
+// console.log(getNumberOfTags(game));
+
+// function getLastGrade(student) {
+// 	// your code
+//      return student.grades.length - 1
+// }
+
+// // Sample usage - do not modify
+// let student = {
+//   name: "Sam Doe",
+//   age: 24,
+//   grades: [13, 15, 15, 14, 18]
+// };
+
+// console.log(getLastGrade(student)); // 18
+
