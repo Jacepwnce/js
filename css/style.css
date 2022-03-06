@@ -27,7 +27,6 @@
 body {
   background-color: var(--neutral-5);
   margin: 0;
-	font-family: 'Open-Sans', sans-serif;
 }
 
 h1 {
@@ -143,6 +142,7 @@ input:not(.btn):focus {
 }
 
 select {
+	width: 300px;
   padding: 10px 15px;
   border-radius: 8px;
 }
