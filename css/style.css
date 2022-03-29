@@ -22,8 +22,8 @@
 }
 
 body {
-  font-family: "Open-sans";
   margin: 0;
+  font-family: "Open-Sans", sans-serif;
 }
 
 h1 {
@@ -105,7 +105,7 @@ button.btn {
   width: 100%;
   padding: 10px 0;
   box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.07),
-    0px -3px 7px 1px rgba(0, 0, 0, 0.07);
+      0px -3px 7px 1px rgba(0, 0, 0, 0.07);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -241,19 +241,4 @@ input:not(.btn):focus {
 
 #footer-wrapper a {
   text-decoration: none;
-}
-
-select {
-  padding: 10px 15px;
-  margin-left: 10px;
-  border-radius: 8px;
-}
-
-#todo-list {
-  line-height: 28px;
-  padding-left: 0;
-}
-
-.separator {
-  margin-bottom: 20px;
 }
